@@ -9,10 +9,6 @@ nav a {
     padding: 20px;
 }
 
-nav h1 {
-    color: darkblue;
-}
-
 img {
   width: 150px;
   height: auto;
@@ -24,40 +20,44 @@ img {
 p {
     padding: 10px;
 }
+
 main {
     max-width: 800px;
-    width: auto;
     margin: auto;
-    border: black;
-    padding: grey;
+    padding: 10px;  
     background-color: white;
     color: black;
-
 }
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
-  }
-  
+}
+
 aside img {
     width: 200px;
     height: auto;
-  }
+}
+
 main img {
     width: 150px;
     height: auto;
-  }
-
+    float: left;
+    margin: 10px;
+}
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-  }
- 
+}
