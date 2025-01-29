@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/rafting_img.jpeg'); /* Background image */
+    background-size: cover;  /* Ensure the background covers the whole page */
+    background-position: center;  /* Center the background */
+    background-attachment: fixed;  /* Keep the background fixed during scrolling */
+    color: white;  /* Default text color */
+}
+
+header {
+    background: rgba(0, 80, 115, 0.8);  /* Semi-transparent background to let the image show through */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 75px;
+    max-height: 50px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 5px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Darken the content section a bit */
+    border-radius: 10px;
+}
+
+footer {
+    background: #ac7544;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
