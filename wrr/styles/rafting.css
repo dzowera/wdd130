@@ -1,0 +1,119 @@
+/* Taking out the blue line under links */
+a {
+    text-decoration: none;
+}
+
+/* Adding downloaded font here */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Bold.ttf') format('truetype');
+}
+
+/* Applying the fonts */
+body {
+    font-family: 'Lora', sans-serif;
+}
+
+h {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    font-size: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* HERO SECTION - Background Image */
+.hero {
+    position: relative;
+    background: url('../images/rafting59_600.jpg') no-repeat center center/cover; /* Ensure no double appearance */
+    height: 500px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Ensure text is visible */
+    padding: 20px;
+}
+
+/* COMPANY NAME (H1) */
+.hero h1 {
+    font-size: 2.5rem;
+    font-family: 'Lora', serif;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 8px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ARTICLE STYLING */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Centered in the middle horizontally */
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    padding: 15px;
+    border-radius: 8px;
+    width: 60%; /* Adjust width as needed */
+    justify-content: space-between;
+}
+
+/* ARTICLE TEXT */
+.hero article p {
+    font-size: 1rem;
+    margin: 0;
+    flex: 1; /* Allow text to take available space */
+    text-align: left;
+}
+
+/* HAPPY CUSTOMER IMAGE */
+.hero article img {
+    width: 100px; /* Adjust size */
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px; /* Spacing between text and image */
+}
+
+/* FOOTER STYLING */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* SOCIAL MEDIA ICONS */
+.sociallinks img {
+    width: 25px; 
+    height: 25px;
+    margin-left: 10px; /* Space between icons */
+}
